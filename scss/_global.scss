@@ -1,0 +1,73 @@
+// Global styling for this template
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smothing: antialiased;
+  outline: 0;
+}
+
+body {
+  @include body-font;
+  padding-top: 54px;
+  color: $gray-100;
+  background: $black;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+  }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $megaman;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+// Especifics 
+.bold {
+  font-weight: bold;
+}
+
+.hover {
+  transition: all .2s;
+}
+
+.hover:hover {
+  filter: brightness(80%);
+}
+
+button {
+  cursor: pointer;
+}
+
+.pink {
+  color: $pink;
+}

@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+  .container-ideias-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+ }
+ .container-ideias-button button {
+   margin: 10px;
+ }
+}
+
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+
+#modal.hide {
+  display: none;
+}
