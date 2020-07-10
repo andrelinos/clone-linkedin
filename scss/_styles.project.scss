@@ -8,8 +8,219 @@
 .sidebar-left, 
 .main,
 .sidebar-rigth {
+  max-width: max-content;
   display: flex;
   flex: 1;
   flex-direction: column;
+  
 }
 
+.sidebar-left {
+  width: 218px;
+}
+
+
+
+.sidebar-rigth {
+  width: 312px;
+}
+
+/* USER INFO */
+.sidebar-left .user-info {
+  width: 100%;
+  background: #2c3e50;
+
+  margin-bottom: 16px;
+
+  border: 1px solid $gray-700;
+  border-top: none;
+  border-radius: 2px;
+}
+
+.sidebar-left i {
+  margin-right: 8px;
+}
+
+.sidebar-left  header {
+  height: 54px;
+  background: $rocket;
+  position: relative;
+  margin: 0;
+
+  background-image: url(https://picsum.photos/300/100);
+  background-position: center;
+  background-size: 462px;
+  background-size: cover;
+  background-clip: content-box;
+}
+
+.sidebar-left  header .avatar {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  border: 2px solid $white;
+  background: $gray-100;
+  position: absolute;
+  top: calc(100% - 41px);
+  left: calc(50% - 41px);
+  overflow: hidden;
+
+  background-image: url(https://picsum.photos/id/237/300/100);
+  background-position: center;
+  background-size: 462px;
+  background-size: cover;
+  background-clip: content-box;
+}
+
+.sidebar-left .user-info .name {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 64px;
+}
+
+.sidebar-left .user-info .bio {
+  padding: 8px 8px 32px;
+  text-align: center;
+  border-bottom: 1px solid $gray-700;
+  margin-bottom: 16px;
+}
+
+.sidebar-left .user-info .report {
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.sidebar-left .user-info .report span {
+  font-weight: bold;
+  color: $blue;
+}
+
+.sidebar-left .user-info .saved-items {
+  padding: 12px 16px;
+  margin-top: 16px;
+  border-top: 1px solid $gray-700;
+  border-bottom: 1px solid $gray-700;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sidebar-left .user-info .saved-items i {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.sidebar-left .feed {
+  padding: 8px;
+  border: 1px solid $gray-700;
+  border-radius: 2px;
+}
+
+.sidebar-left .feed .recents,
+.sidebar-left .feed .list-group {
+  padding: 8px;
+}
+
+/* MAIN */
+.main {
+  width: 552px;
+  margin: 0 24px;
+  object-fit: contain;
+}
+
+.main .post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 121px;
+  margin-bottom: 32px;
+  border: 1px solid $gray-700;
+  padding: 8px;
+}
+
+.main .post .create-new-pub {
+  padding: 8px 0 16px;
+  border-bottom: 1px solid $gray-700;
+  font-weight: bold;
+}
+
+.main .post .create-new-pub i {
+  padding: 8px;
+  font-size: 22px;
+}
+
+.main .container-pub {
+  border: 1px solid $gray-700;
+  border-radius: 2px;
+}
+
+.main .container-pub .post-img img {
+  width: 552px;
+  height: 552px;
+  object-fit: cover;
+}
+
+.main .post .pub-options {
+  display: flex;
+  padding: 16px;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.main .post .pub-options i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.main .container-pub header {
+  height: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.main .container-pub header .avatar {
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  margin-left: 8px;
+  background-image: url(https://picsum.photos/id/237/300/100);
+  border-radius: 50%;
+}
+
+.main .container-pub header .description {
+  font-size: 12px;
+  padding: 8px;
+}
+
+.main .container-pub header .description .name-user {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.main .container-pub header .description .name-user span {
+  margin-left: 8px;
+  font-weight: normal;
+  color: $gray-500;
+}
+
+.main .container-pub p {
+  padding: 8px;
+}
+
+/* SIDBAR-RIGHT */
+.sidebar-rigth .publicity {
+  width: 300px;
+  height: 250px;
+  background: $gray-300;
+  background-image: url(https://picsum.photos/600/600);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px;
+  border: 1px solid $gray-700;
+}

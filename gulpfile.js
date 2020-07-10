@@ -18,7 +18,7 @@ const pkg = require('./package.json');
 
 // Set the banner content
 const banner = ['/*!\n',
-  ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
+  ' * Copyright 2019-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
   ' * Licensed under <%= pkg.license %> (https://github.com/andrelinos/<%= pkg.name %>/blob/master/LICENSE)\n',
   ' * README <%= pkg.license %> (https://github.com/andrelinos/<%= pkg.name %>/blob/master/README)\n',
   ' */\n',

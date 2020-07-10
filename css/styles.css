@@ -1,7 +1,7 @@
 /*!
  * Copyright 2013-2020 Andrelino Silva
- * Licensed under MIT (https://github.com/andrelinos/casacriativa/blob/master/LICENSE)
- * README MIT (https://github.com/andrelinos/casacriativa/blob/master/README)
+ * Licensed under MIT (https://github.com/andrelinos/clonelinkedin/blob/master/LICENSE)
+ * README MIT (https://github.com/andrelinos/clonelinkedin/blob/master/README)
  */
 
 * {
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Roboto', Segoe UI 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
   padding-top: 54px;
   color: #f8f9fa;
   background: #000;
@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Roboto', Segoe UI 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #48dbfb;
@@ -76,6 +76,10 @@ button {
   color: #e83e8c;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   width: 100%;
   max-width: 1188px;
@@ -86,9 +90,216 @@ button {
 .sidebar-left,
 .main,
 .sidebar-rigth {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   display: flex;
   flex: 1;
   flex-direction: column;
+}
+
+.sidebar-left {
+  width: 218px;
+}
+
+.sidebar-rigth {
+  width: 312px;
+}
+
+/* USER INFO */
+.sidebar-left .user-info {
+  width: 100%;
+  background: #2c3e50;
+  margin-bottom: 16px;
+  border: 1px solid #495057;
+  border-top: none;
+  border-radius: 2px;
+}
+
+.sidebar-left i {
+  margin-right: 8px;
+}
+
+.sidebar-left header {
+  height: 54px;
+  background: #7159c1;
+  position: relative;
+  margin: 0;
+  background-image: url(https://picsum.photos/300/100);
+  background-position: center;
+  background-size: 462px;
+  background-size: cover;
+  background-clip: content-box;
+}
+
+.sidebar-left header .avatar {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: #f8f9fa;
+  position: absolute;
+  top: calc(100% - 41px);
+  left: calc(50% - 41px);
+  overflow: hidden;
+  background-image: url(https://picsum.photos/id/237/300/100);
+  background-position: center;
+  background-size: 462px;
+  background-size: cover;
+  background-clip: content-box;
+}
+
+.sidebar-left .user-info .name {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 64px;
+}
+
+.sidebar-left .user-info .bio {
+  padding: 8px 8px 32px;
+  text-align: center;
+  border-bottom: 1px solid #495057;
+  margin-bottom: 16px;
+}
+
+.sidebar-left .user-info .report {
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.sidebar-left .user-info .report span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.sidebar-left .user-info .saved-items {
+  padding: 12px 16px;
+  margin-top: 16px;
+  border-top: 1px solid #495057;
+  border-bottom: 1px solid #495057;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sidebar-left .user-info .saved-items i {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.sidebar-left .feed {
+  padding: 8px;
+  border: 1px solid #495057;
+  border-radius: 2px;
+}
+
+.sidebar-left .feed .recents,
+.sidebar-left .feed .list-group {
+  padding: 8px;
+}
+
+/* MAIN */
+.main {
+  width: 552px;
+  margin: 0 24px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.main .post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 121px;
+  margin-bottom: 32px;
+  border: 1px solid #495057;
+  padding: 8px;
+}
+
+.main .post .create-new-pub {
+  padding: 8px 0 16px;
+  border-bottom: 1px solid #495057;
+  font-weight: bold;
+}
+
+.main .post .create-new-pub i {
+  padding: 8px;
+  font-size: 22px;
+}
+
+.main .container-pub {
+  border: 1px solid #495057;
+  border-radius: 2px;
+}
+
+.main .container-pub .post-img img {
+  width: 552px;
+  height: 552px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.main .post .pub-options {
+  display: flex;
+  padding: 16px;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.main .post .pub-options i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.main .container-pub header {
+  height: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.main .container-pub header .avatar {
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  margin-left: 8px;
+  background-image: url(https://picsum.photos/id/237/300/100);
+  border-radius: 50%;
+}
+
+.main .container-pub header .description {
+  font-size: 12px;
+  padding: 8px;
+}
+
+.main .container-pub header .description .name-user {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.main .container-pub header .description .name-user span {
+  margin-left: 8px;
+  font-weight: normal;
+  color: #adb5bd;
+}
+
+.main .container-pub p {
+  padding: 8px;
+}
+
+/* SIDBAR-RIGHT */
+.sidebar-rigth .publicity {
+  width: 300px;
+  height: 250px;
+  background: #dee2e6;
+  background-image: url(https://picsum.photos/600/600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #495057;
 }
 
 @media (max-width: 767px) {

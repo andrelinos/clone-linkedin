@@ -15,178 +15,193 @@
 </head>
 
 <body>
-    <div class="container">
+  <div class="container">
 
-      <div class="side-left">
-        <div class="user-info">
-          <header>
-            <div class="avatar"></div>
-          </header>
-          <div class="name">Andrelino Silva</div>
-          <div class="bio">Cursando na Rocketseat |JavaScript, NodeJS, ReactJS, React Native pela @rocketsea</div>
-          <div>Quem viu seu perfil <span>213</span></div>
-          <div>Viram sua publicação <span>113</span></div>
-          <div class="saved-items">Itens salvos</div>
-        </div>
+    <div class="sidebar-left">
+      <div>
+      <header>
+        <div class="avatar"></div>
+      </header>
+      <div class="user-info">
+        <div class="name">Andrelino Silva</div>
+        <div class="bio">Cursando na Rocketseat - JavaScript, NodeJS, ReactJS, React Native pela @rocketsea</div>
+        <div class="report">Quem viu seu perfil <span>213</span></div>
+        <div class="report">Viram sua publicação <span>113</span></div>
+        <div class="saved-items"><i class="far fa-bookmark"></i>  Itens salvos</div>
       </div>
 
+    </div>
       <div class="feed">
-        <ul>
-          <li>React Native</li>
-          <li># homeoffice</li>
-          <li>css3</li>
-          <li>vagas</li>
-          <li>rocketseat</li>
+        Recentes
+        <ul class="recents">
+          <li><i class="fa fa-users"></i> React Native</li>
+          <li><i class="fa fa-hashtag"></i>  homeoffice</li>
+          <li><i class="fa fa-hashtag"></i> css3</li>
+          <li><i class="fa fa-hashtag"></i> vagas</li>
+          <li><i class="fa fa-hashtag"></i> rocketseat</li>
         </ul>
-      </div>
 
-      <div class="list-group">
-        <ul>
-          <li>React Native</li>
-          <li>React JS</li>
-          <li>JavaScript</li>
+        Grupos
+        <ul class="list-group">
+          <li><i class="fa fa-users"></i>React Native</li>
+          <li><i class="fa fa-users"></i>React JS</li>
+          <li><i class="fa fa-users"></i>JavaScript</li>
           <li>Visualizar todos</li>
         </ul>
-      </div>
 
-      <div class="list-events">
-        <ul>
-          <li>homeoffice</li>
-          <li>css3</li>
-          <li>vagas</li>
-          <li>Visualizar mais ></li>
+        <span class="events">
+          Eventos <i class="fa fa-plus"></i>
+        </span>
+        <ul class="list-events">
+          <li><i class="fa fa-users"></i>homeoffice</li>
+          <li><i class="fa fa-users"></i>css3</li>
+          <li><i class="fa fa-users"></i>vagas</li>
+          <li><i class="fa fa-users"></i>Visualizar mais 
+            <i class="fa fa-chevron-down"></i>
+          </li>
         </ul>
 
         <div class="list-discovery">Descubra mais</div>
-      </div>
 
-      <div class="main">
-        <div class="post">
-          <div class="create-new-pub">[>] Começar uma publicação</div>
-          <div class="pub-options">
-            <div class="camera"></div>
-            <div class="video"></div>
-            <div class="doc"></div>
-            <div class="write-pub"></div>
-          </div>
-        </div>
+      </div> <!-- .feed -->
+    </div>
 
-        <div class="container-pub">
-          <header>
-            <div class="avatar"></div>
-            <div class="description">
-              <div class="name-user">Andrelino Silva 2</div>
-              <div class="about">Desenvolvedor de software na empresa do futuro.</div>
-              <div class="edited">1 sem . Editado .</div>
-            </div>
-          </header>
-
-          <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-          <div class="post-img"><img src="https://picsum.photos/600/600"></div>
-          <div class="post-likes">
-            :like:, :heart:
-          </div>
-          <div class="post-foot-items">
-            <div class="like">Gostei</div>
-            <div class="comment">Comentar</div>
-            <div class="share">Compartilhar</div>
-            <div class="send">Enviar</div>
-          </div>
+    <div class="main">
+      <div class="post">
+        <div class="create-new-pub"><i class="far fa-edit"></i> Começar uma publicação</div>
+        <div class="pub-options">
+          <div class="camera"><i class="fa fa-camera"></i>Foto</div>
+          <div class="video"><i class="fa fa-video"></i>Vídeo</div>
+          <div class="doc"><i class="far fa-file-alt"></i>Documento</div>
+          <div class="write-pub"><i class="far fa-newspaper"></i>Escrever artigo</div>
         </div>
       </div>
 
-      <div class="side-right">
-        <div class="publicity">
-          <div class="description">Your dream job is closer than you think</div>
-          <button>See jobs</button>
-          <div class="linkedin-logo"><img src="https://static-exp1.licdn.com/scds/common/u/images/promo/ads/li_evergreen_jobs_ad_300x250_v1.jpg" alt=""></div>
+      <div class="container-pub">
+        <header>
+          <div class="avatar"></div>
+          <div class="description">
+            <div class="name-user">Andrelino Silva<span>- 2*</span></div> 
+            <div class="about">Estudando NodeJS, ReactJS, ReactNative | Bootcamp goStack at Rocketseat.</div>
+            <div class="edited">1 sem . Editado <i class="fa fa-globe-europe"></i></div>
+          </div>
+        </header>
+
+        <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo
+          utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para
+          fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a
+          editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a
+          Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado
+          a softwares de editoração eletrônica como Aldus PageMaker.</p>
+        <div class="post-img"><img src="https://picsum.photos/800/600"></div>
+        <div class="post-likes">
+          :like:, :heart:
         </div>
-
-        <div class="follows-module">
-          <span>i</span>
-
-          <div class="follow-suggest">
-            <div class="logo"><img src="https://media-exp1.licdn.com/dms/image/C4D0BAQGNqUR-YtHFAQ/company-logo_100_100/0?e=1602115200&v=beta&t=spaeLZnI6gnX0P0paAJaOohr3xhyGM4zYQPagWBXbXs" alt=""></div>
-            <div>
-              <div class="name-suggest">Natura</div>
-              <div class="description">Empresa - Cosmética</div>
-            </div>
-            <button>+ Seguir</button>
-          </div>
-
-          <div class="follow-suggest">
-            <div class="logo"><img src="https://media-exp1.licdn.com/dms/image/C4E0BAQEf1rmP9qtO_A/company-logo_100_100/0?e=1602115200&v=beta&t=X2lrqpztw4LajlRw-tq2NiP-Qexr4vQx4xv8rM0oGrc" alt=""></div>
-            <div>
-              <div class="name-suggest">The Developers Conference</div>
-              <div class="description">Empresa - Software</div>
-            </div>
-            <button>+ Seguir</button>
-          </div>
-
+        <div class="post-foot-items">
+          <div class="like">Gostei</div>
+          <div class="comment">Comentar</div>
+          <div class="share">Compartilhar</div>
+          <div class="send">Enviar</div>
         </div>
       </div>
     </div>
 
-    <div class="mensage-box">
-      <header>
-        <div class="user">
-          <div class="avatar"></div>
-          Mensagens
-        </div>
-        <div class="butons">
-          [/] ...
-        </div>
-      </header>
-
-      <div class="input-search">
-        P <input type="search"> |||
+    <div class="sidebar-rigth">
+      <div class="publicity">
+        <div class="description">Your dream job is closer than you think</div>
+        <button>See jobs</button>
+        <div class="linkedin-logo"></div>
       </div>
-      <div class="chats">
 
-        <div class="chat">
-          <div class="avatar"></div>
-          <div class="description">
-            <div class="name">Mayk Brito</div>
-            <div class="short-message">Você: Valeu, Mayk Brito</div>
+      <div class="follows-module">
+        <span>i</span>
+
+        <div class="follow-suggest">
+          <div class="logo"><img
+              src="https://media-exp1.licdn.com/dms/image/C4D0BAQGNqUR-YtHFAQ/company-logo_100_100/0?e=1602115200&v=beta&t=spaeLZnI6gnX0P0paAJaOohr3xhyGM4zYQPagWBXbXs"
+              alt=""></div>
+          <div>
+            <div class="name-suggest">Natura</div>
+            <div class="description">Empresa - Cosmética</div>
           </div>
+          <button>+ Seguir</button>
         </div>
 
-        <div class="chat">
-          <div class="avatar"></div>
-          <div class="description">
-            <div class="name">Mayk Brito</div>
-            <div class="short-message">Você: Valeu, Mayk Brito</div>
+        <div class="follow-suggest">
+          <div class="logo"><img
+              src="https://media-exp1.licdn.com/dms/image/C4E0BAQEf1rmP9qtO_A/company-logo_100_100/0?e=1602115200&v=beta&t=X2lrqpztw4LajlRw-tq2NiP-Qexr4vQx4xv8rM0oGrc"
+              alt=""></div>
+          <div>
+            <div class="name-suggest">The Developers Conference</div>
+            <div class="description">Empresa - Software</div>
           </div>
+          <button>+ Seguir</button>
         </div>
-
-        <div class="chat">
-          <div class="avatar"></div>
-          <div class="description">
-            <div class="name">Mayk Brito</div>
-            <div class="short-message">Você: Valeu, Mayk Brito</div>
-          </div>
-        </div>
-
-        <div class="chat">
-          <div class="avatar"></div>
-          <div class="description">
-            <div class="name">Mayk Brito</div>
-            <div class="short-message">Você: Valeu, Mayk Brito</div>
-          </div>
-        </div>
-
-        <div class="chat">
-          <div class="avatar"></div>
-          <div class="description">
-            <div class="name">Mayk Brito</div>
-            <div class="short-message">Você: Valeu, Mayk Brito</div>
-          </div>
-        </div>
-
 
       </div>
+    </div>
+  </div>
+
+  <div class="mensage-box">
+    <header>
+      <div class="user">
+        <div class="avatar"></div>
+        Mensagens
+      </div>
+      <div class="butons">
+        [/] ...
+      </div>
+    </header>
+
+    <div class="input-search">
+      P <input type="search"> |||
+    </div>
+    <div class="chats">
+
+      <div class="chat">
+        <div class="avatar"></div>
+        <div class="description">
+          <div class="name">Mayk Brito</div>
+          <div class="short-message">Você: Valeu, Mayk Brito</div>
+        </div>
+      </div>
+
+      <div class="chat">
+        <div class="avatar"></div>
+        <div class="description">
+          <div class="name">Mayk Brito</div>
+          <div class="short-message">Você: Valeu, Mayk Brito</div>
+        </div>
+      </div>
+
+      <div class="chat">
+        <div class="avatar"></div>
+        <div class="description">
+          <div class="name">Mayk Brito</div>
+          <div class="short-message">Você: Valeu, Mayk Brito</div>
+        </div>
+      </div>
+
+      <div class="chat">
+        <div class="avatar"></div>
+        <div class="description">
+          <div class="name">Mayk Brito</div>
+          <div class="short-message">Você: Valeu, Mayk Brito</div>
+        </div>
+      </div>
+
+      <div class="chat">
+        <div class="avatar"></div>
+        <div class="description">
+          <div class="name">Mayk Brito</div>
+          <div class="short-message">Você: Valeu, Mayk Brito</div>
+        </div>
+      </div>
+
 
     </div>
+
+  </div>
   <script src="js/main.min.js"></script>
 </body>
 
